@@ -1,0 +1,27 @@
+{
+  "SessionStart": [
+    {
+      "hooks": [
+        {
+          "type": "command",
+          "command": "bash \"${CLAUDE_PLUGIN_ROOT}/scripts/gate-check.sh\"",
+          "timeout": 5,
+          "statusMessage": "Checking dream gates..."
+        }
+      ]
+    }
+  ],
+  "PostToolUse": [
+    {
+      "matcher": "Write|Edit",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "bash \"${CLAUDE_PLUGIN_ROOT}/scripts/check-dream-active.sh\"",
+          "timeout": 3,
+          "async": true
+        }
+      ]
+    }
+  ]
+}
