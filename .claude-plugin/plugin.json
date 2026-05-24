@@ -7,7 +7,7 @@
     "name": "Colin Dickson",
     "url": "https://github.com/colindickson"
   },
-  "repository": "https://github.com/colindickson/dream-plugin",
+  "repository": "https://github.com/telex-ai/dream-plugin",
   "keywords": ["memory", "consolidation", "maintenance", "dream"],
   "commands": "./commands/",
   "skills": "./skills/",

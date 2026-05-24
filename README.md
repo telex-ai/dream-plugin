@@ -25,7 +25,7 @@ claude --plugin-dir /path/to/dream-plugin
 
 ```bash
 # Clone to plugin cache
-git clone https://github.com/colindickson/dream-plugin.git ~/.claude/plugins/cache/dream
+git clone https://github.com/telex-ai/dream-plugin.git ~/.claude/plugins/cache/dream
 ```
 
 Then enable in your Claude Code settings (`~/.claude/settings.json`):
