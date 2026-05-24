@@ -24,11 +24,18 @@ claude --plugin-dir /path/to/dream-plugin
 ### Permanent install
 
 ```bash
-# Add the dream repo as a marketplace
-claude plugins marketplace add https://github.com/telex-ai/dream-plugin.git
+# Clone to plugin cache
+git clone https://github.com/telex-ai/dream-plugin.git ~/.claude/plugins/cache/dream
+```
 
-# Install the plugin
-claude plugins install dream@dream
+Then enable in your Claude Code settings (`~/.claude/settings.json`):
+
+```json
+{
+  "enabledPlugins": {
+    "dream@inline": true
+  }
+}
 ```
 
 ## Usage
