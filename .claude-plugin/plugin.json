@@ -10,6 +10,5 @@
   "repository": "https://github.com/telex-ai/dream-plugin",
   "keywords": ["memory", "consolidation", "maintenance", "dream"],
   "commands": "./commands/",
-  "skills": "./skills/",
-  "hooks": "./hooks/"
+  "skills": "./skills/"
 }
